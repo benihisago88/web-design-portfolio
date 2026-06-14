@@ -14,6 +14,12 @@ const projects = [
     solution: '業種別の入口、課題起点のナビゲーション、段階的な機能説明を設計。デモ予約までの心理的負担を下げるため、料金・導入工程・セキュリティ情報を同一導線に統合しました。',
     targets: ['デモ予約率 +28%', '直帰率 -18%', '営業説明時間 -20%'],
     deliverables: ['競合調査', '情報設計', 'ワイヤーフレーム', 'UIデザイン', '計測設計'],
+    production: {
+      platform: 'Webflow-ready',
+      build: 'Figma components / CMS collections / responsive specs',
+      growth: 'GA4 demo events / SEO schema / Core Web Vitals budget',
+      handoff: 'Named components / interaction notes / QA checklist',
+    },
     palette: ['#10130d', '#d8ff5f', '#f3f1e9'],
     source: 'https://www.pexels.com/photo/person-using-a-laptop-6802042/',
   },
@@ -30,6 +36,12 @@ const projects = [
     solution: '時間帯で変わる過ごし方を物語として構成。部屋・食事・周辺体験を一つの滞在プランとして見せ、日程検索を常に操作できる予約導線を設計しました。',
     targets: ['公式予約比率 +15pt', '客室詳細到達 +35%', 'モバイル離脱 -22%'],
     deliverables: ['ブランド整理', 'カスタマージャーニー', 'コンテンツ設計', 'UIデザイン', '予約導線'],
+    production: {
+      platform: 'WordPress-ready',
+      build: 'Reusable Gutenberg blocks / booking integration map',
+      growth: 'Search intent pages / booking funnel events / image budget',
+      handoff: 'Block rules / content model / editor guide',
+    },
     palette: ['#24333a', '#ff6b42', '#ebe2d4'],
     source: 'https://www.pexels.com/photo/resort-with-swimming-pool-261102/',
   },
@@ -46,6 +58,12 @@ const projects = [
     solution: '酸味・コク・香りを直感的なスケールで比較できる商品カードを設計。飲む場面から選ぶ診断と、定期便への自然なアップセルを組み込みました。',
     targets: ['商品詳細遷移 +32%', '定期便選択 +18%', 'カート離脱 -12%'],
     deliverables: ['商品分類', '購入フロー', 'アートディレクション', 'UIデザイン', 'EC改善案'],
+    production: {
+      platform: 'Shopify-ready',
+      build: 'Theme sections / product variants / cart flow',
+      growth: 'CRO hypotheses / GA4 ecommerce events / product SEO',
+      handoff: 'Section settings / Liquid notes / merchandising guide',
+    },
     palette: ['#f3c44b', '#3b63ff', '#391f17'],
     source: 'https://www.pexels.com/photo/close-up-of-coffee-cup-on-table-302899/',
   },
@@ -62,6 +80,12 @@ const projects = [
     solution: '症状・診療科・受診方法の3方向から探せる情報設計に再編。文字サイズ、コントラスト、キーボード操作を含むWCAG 2.2 AA準拠を設計条件にしました。',
     targets: ['予約完了率 +24%', '電話問い合わせ -18%', '主要導線 AA準拠'],
     deliverables: ['ユーザー調査', '情報設計', 'アクセシビリティ', 'プロトタイプ', '運用ガイド'],
+    production: {
+      platform: 'CMS-ready',
+      build: 'Accessible form states / reusable service templates',
+      growth: 'Local SEO structure / form events / performance budget',
+      handoff: 'WCAG checklist / content rules / error-state specs',
+    },
     palette: ['#173d35', '#79d7b4', '#fffaf0'],
     source: 'https://www.pexels.com/photo/a-doctor-talking-to-a-patient-5452201/',
   },
@@ -78,6 +102,12 @@ const projects = [
     solution: '地図とタイムテーブルを横断するお気に入り機能を中心に設計。会場の混雑・移動時間・現在地を考慮したマイプラン体験を提案しました。',
     targets: ['企画保存率 40%', '回遊会場数 +1.6', 'SNS流入 +30%'],
     deliverables: ['企画設計', 'サイトマップ', 'クリエイティブ監修', 'UIデザイン', '運用設計'],
+    production: {
+      platform: 'Headless CMS-ready',
+      build: 'Event collections / filters / reusable schedule cards',
+      growth: 'Campaign UTM plan / share events / technical SEO',
+      handoff: 'Content schema / component states / release checklist',
+    },
     palette: ['#191919', '#ffdf00', '#f0472e'],
     source: 'https://www.pexels.com/photo/people-at-concert-1190297/',
   },
@@ -116,7 +146,7 @@ function homeTemplate() {
         <a href="#approach">APPROACH</a>
         <a href="#contact">CONTACT</a>
       </nav>
-      <span class="availability"><i></i> AVAILABLE</span>
+      <span class="availability" role="status"><i aria-hidden="true"></i> AVAILABLE</span>
     </header>
     <main>
       <section class="hero">
@@ -146,11 +176,26 @@ function homeTemplate() {
         </div>
       </section>
       <section class="capabilities">
+        <h2 class="sr-only">対応できる領域</h2>
         <div class="section-heading"><p>CAPABILITIES</p><p>END-TO-END</p></div>
         <div class="cap-list">
           <span>Web Direction</span><span>UX Strategy</span><span>Information Architecture</span>
           <span>UI Design</span><span>Responsive Design</span><span>Accessibility</span>
         </div>
+      </section>
+      <section class="market-fit" aria-labelledby="market-fit-title">
+        <div class="section-heading"><p>COMMON CLIENT BRIEFS</p><p>UPWORK-READY</p></div>
+        <div class="market-intro">
+          <h2 id="market-fit-title">依頼される仕事を、<br>公開後まで設計する。</h2>
+          <p>直近のUpwork求人で頻出する要件を、制作工程とケーススタディへ反映しています。ツール名だけでなく、実装・計測・運用まで渡せる形を重視します。</p>
+        </div>
+        <div class="demand-grid">
+          <article><span>01</span><h3>Figma → Build</h3><p>Desktop・tablet・mobileの仕様、再利用コンポーネント、状態設計まで実装可能な形で整理。</p><b>HTML5 / CSS / JS / Webflow-ready</b></article>
+          <article><span>02</span><h3>CMS & Commerce</h3><p>WordPress、Shopify、Webflowを想定したコンテンツモデルと編集しやすいセクション設計。</p><b>CMS schema / Shopify-ready / Blocks</b></article>
+          <article><span>03</span><h3>CRO & Analytics</h3><p>CTA、フォーム、商品・予約導線を仮説化し、GA4で検証できるイベントまで定義。</p><b>GA4 events / Funnel / A/B hypotheses</b></article>
+          <article><span>04</span><h3>Launch Quality</h3><p>SEO、速度、アクセシビリティ、端末別QAを公開条件として扱い、検証結果を残します。</p><b>WCAG / Core Web Vitals / SEO</b></article>
+        </div>
+        <p class="market-note">Platform labels indicate implementation planning and handoff readiness for concept projects, not completed client deployments on those platforms.</p>
       </section>
       <section id="contact" class="contact">
         <p>HAVE A PROJECT IN MIND?</p>
@@ -179,6 +224,7 @@ function detailTemplate(project) {
         <img src="${project.image}" alt="${project.title}のコンセプトビジュアル">
       </section>
       <section class="case-facts">
+        <h2 class="sr-only">プロジェクト概要</h2>
         <div><span>ROLE</span><p>${project.role}</p></div>
         <div><span>PROJECT</span><p>Self-initiated concept</p></div>
         <div><span>YEAR</span><p>2026</p></div>
@@ -215,6 +261,7 @@ function detailTemplate(project) {
         </div>
       </section>
       <section class="case-board" style="--accent:${project.color}">
+        <h2 class="sr-only">設計目標と制作範囲</h2>
         <div>
           <span>DESIGN TARGETS</span>
           <p class="disclaimer">架空案件のため、以下は実績値ではなく検証対象として設定した目標値です。</p>
@@ -229,7 +276,19 @@ function detailTemplate(project) {
           <div>${project.palette.map((color) => `<i style="background:${color}" title="${color}"></i>`).join('')}</div>
         </div>
       </section>
+      <section class="production-plan">
+        <div class="section-heading"><p>PRODUCTION PLAN</p><p>IMPLEMENTATION-READY</p></div>
+        <h2>デザインで終わらせない<br>引き継ぎ設計。</h2>
+        <div class="production-grid">
+          <article><span>PLATFORM</span><strong>${project.production.platform}</strong></article>
+          <article><span>BUILD SYSTEM</span><p>${project.production.build}</p></article>
+          <article><span>GROWTH & DATA</span><p>${project.production.growth}</p></article>
+          <article><span>HANDOFF</span><p>${project.production.handoff}</p></article>
+        </div>
+        <p class="production-note">This is an implementation plan for a self-initiated concept, not a claim of a live client deployment.</p>
+      </section>
       <section class="case-credit">
+        <h2 class="sr-only">画像クレジット</h2>
         <p>IMAGE CREDIT</p>
         <p>Photo from <a href="${project.source}" target="_blank" rel="noreferrer">Pexels ↗</a>, used under the Pexels License.</p>
       </section>

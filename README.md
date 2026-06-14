@@ -41,6 +41,39 @@ Project photographs are sourced from [Pexels](https://www.pexels.com/) and used 
 - Vanilla JavaScript
 - CSS
 - GitHub Pages
+- Self-hosted WOFF2 web fonts
+- Semantic HTML5
+- Responsive layouts for mobile, tablet, desktop, and wide screens
+
+## Upwork market alignment
+
+The portfolio structure is informed by recurring requirements in current Upwork briefs:
+
+- Figma-to-responsive implementation
+- Webflow, WordPress, and Shopify-ready component planning
+- Reusable CMS structures and editor-friendly handoff
+- Conversion-focused landing pages and e-commerce flows
+- GA4 event planning, basic technical SEO, and Core Web Vitals
+- Accessibility, cross-device QA, and clear client communication
+
+Research references:
+
+- [Upwork Portfolio Guide](https://www.upwork.com/resources/portfolio-guide)
+- [Figma to Webflow job requirements](https://www.upwork.com/freelance-jobs/apply/Webflow-Developer-Figma-Webflow_~022054357057250824100/)
+- [Shopify implementation requirements](https://www.upwork.com/freelance-jobs/apply/Shopify-Developer-Needed-Implement-Figma-Designs-Existing-Premium-Theme_~022057171039265390107/)
+- [WordPress responsive implementation requirements](https://www.upwork.com/freelance-jobs/apply/Senior-WordPress-Front-End-Developer-Needed-Pixel-Perfect-Implementation_~022053955724926355937/)
+
+Platform labels in the concept projects describe implementation planning and handoff readiness. They do not claim completed client deployments.
+
+## Font licenses
+
+The Latin web fonts are self-hosted WOFF2 files and do not depend on fonts installed on the visitor's device.
+
+- Manrope — SIL Open Font License 1.1
+- Playfair Display — SIL Open Font License 1.1
+- DM Mono — SIL Open Font License 1.1
+
+Japanese text uses an explicit OS-appropriate fallback stack: Hiragino on macOS/iOS, Yu Gothic on Windows, and Noto Sans JP where available.
 
 ## License
 
