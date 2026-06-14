@@ -45,6 +45,17 @@ Project photographs are sourced from [Pexels](https://www.pexels.com/) and used 
 - Semantic HTML5
 - Responsive layouts for mobile, tablet, desktop, and wide screens
 
+## Internationalization
+
+English is the default language for international clients. The complete interface and all five case studies are available in English and Japanese.
+
+- Shareable language URLs: `?lang=en` and `?lang=ja`
+- Shareable case-study URLs: `?lang=en&case=flow`
+- Language choice persists locally when storage is available
+- The current case and scroll context are preserved when switching languages
+- Dynamic `lang`, page title, description, Open Graph locale, canonical URL, and `hreflang` alternates
+- Accessible 44px language controls on mobile and desktop
+
 ## Upwork market alignment
 
 The portfolio structure is informed by recurring requirements in current Upwork briefs:
