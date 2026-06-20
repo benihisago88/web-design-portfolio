@@ -1,0 +1,21 @@
+# 全エディタ共通の書式ルール。JetBrains・VS Code系(Antigravity等)が自動で従う。
+root = true
+
+[*]
+charset = utf-8
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+[*.py]
+indent_size = 4
+
+[*.{swift,kt,java}]
+indent_size = 4
+
+[*.md]
+trim_trailing_whitespace = false
+
+[*.{ps1,bat,cmd}]
+end_of_line = crlf
